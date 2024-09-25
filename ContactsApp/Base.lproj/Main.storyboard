@@ -1,24 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContactsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqt-Gr-Kqc" userLabel="Initials Circle">
+                                <rect key="frame" x="152.66666666666666" y="99" width="88" height="88"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8F-F8-BkM" userLabel="Initials">
+                                        <rect key="frame" x="23.333333333333343" y="25.000000000000004" width="41" height="38.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="HTq-wU-vgm"/>
+                                    <constraint firstItem="c8F-F8-BkM" firstAttribute="centerX" secondItem="lqt-Gr-Kqc" secondAttribute="centerX" id="MMV-Ty-Cmi"/>
+                                    <constraint firstItem="c8F-F8-BkM" firstAttribute="centerY" secondItem="lqt-Gr-Kqc" secondAttribute="centerY" id="kZ9-De-PQp"/>
+                                    <constraint firstAttribute="width" constant="88" id="rbp-aA-miN"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adalberto Pompolo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d09-Ta-tuc" userLabel="Name">
+                                <rect key="frame" x="81" y="211" width="231" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1-770-736-8031" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTw-Cw-9eY" userLabel="Phone">
+                                <rect key="frame" x="133" y="260.66666666666669" width="127.33333333333331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="beto.nassu@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjA-7B-RVY" userLabel="Email">
+                                <rect key="frame" x="107.66666666666669" y="285.66666666666669" width="178" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.3529411764705882" green="0.3529411764705882" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agile Engine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rck-R1-9qh">
+                                <rect key="frame" x="149.66666666666666" y="306.66666666666669" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.35294117650000001" green="0.35294117650000001" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lqt-Gr-Kqc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YUB-bW-aR5"/>
+                            <constraint firstItem="BjA-7B-RVY" firstAttribute="top" secondItem="pTw-Cw-9eY" secondAttribute="bottom" constant="4" id="Z7Z-uK-Ytb"/>
+                            <constraint firstItem="pTw-Cw-9eY" firstAttribute="top" secondItem="d09-Ta-tuc" secondAttribute="bottom" constant="16" id="Zl4-op-xrH"/>
+                            <constraint firstItem="lqt-Gr-Kqc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="dbm-48-J7S"/>
+                            <constraint firstItem="BjA-7B-RVY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="frq-n4-8WV"/>
+                            <constraint firstItem="d09-Ta-tuc" firstAttribute="top" secondItem="lqt-Gr-Kqc" secondAttribute="bottomMargin" constant="32" id="h66-Bd-dEF"/>
+                            <constraint firstItem="pTw-Cw-9eY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iJi-F3-tqV"/>
+                            <constraint firstItem="Rck-R1-9qh" firstAttribute="top" secondItem="BjA-7B-RVY" secondAttribute="bottom" id="oKy-HY-MVx"/>
+                            <constraint firstItem="d09-Ta-tuc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pKv-Tb-3lm"/>
+                            <constraint firstItem="Rck-R1-9qh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="txA-3J-MUV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="initialsCircle" destination="lqt-Gr-Kqc" id="9ug-5c-ndE"/>
+                        <outlet property="initialsLabel" destination="c8F-F8-BkM" id="5kk-aJ-chu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-39" y="4"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
